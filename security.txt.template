@@ -1,9 +1,10 @@
-# How this works...
+# Original version by Casey Ellis and Chris Raethke, 10/19/16
+## How this works...
 # The security.txt file should be placed at / of the website directory.
 ## Domain-wide rules
 # Security.txt allows nomination of security testing rules for other hosts within the same domain *only* if it it is placed on the www and/or root website for that domain (i.e. www.company.com/ or company.com/)
 ## Rule priority
-#Rules which affect the website on which the file is placed will be given priority over domain-wide rules (e.g. an Allow rule placed on https://host1.company.com will override a Disallow rule placed on https://company.com/)
+# Rules which affect the website on which the file is placed will be given priority over domain-wide rules (e.g. an Allow rule placed on https://host1.company.com will override a Disallow rule placed on https://company.com/)
 
 # Allow/Disallow rules are firewall-style, processed top down. The most permissive rules should be placed at the bottom.
 Disallow: pages.bugcrowd.com
@@ -19,13 +20,13 @@ Crawl-delay: 1
 # Blank = security@company.com
 Report-to: https://bugcrowd.com/bugcrowd/report
 
-# Terms relating to security testing, including details of any incentive, are found below. Researchers should read these before commencing activity.
+# Legal terms relating to security testing, including details of any incentive, are found below. Security rearchers should read these before commencing activity.
 Terms: https://bugcrowd.com/bugcrowd
 
-# Sitemap of the website where this file resides
+# Sitemap of the website where this file resides.
 Sitemap: https://bugcrowd.com/sitemap.xml
 
-# Disallow specific user agents which are of no interest to your organization
+# Disallow specific user agents which are of no interest to your organization.
 Disallow-user-agent: Acunetix
 
 # If your company would like to encourage testing of non-web targets (e.g. mobile applications), provide a link to the page which contains details of these targets here. Otherwise, leave blank.
